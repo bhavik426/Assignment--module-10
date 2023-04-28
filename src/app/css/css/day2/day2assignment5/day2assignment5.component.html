@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container
+        {
+            width: auto;
+            display: block;
+        }
+
+        .sec1
+        {
+            display: flex;
+            justify-content: space-between;
+            background-color: grey;
+        }
+        .sec1part1
+        {
+            margin: auto;
+        }
+        #img1
+        {
+            padding: 25px;
+            width: 100px;
+            height: 75px;
+        }
+        .sec1part2
+        {
+            margin: auto;
+        }
+        .tags
+        {
+            display: flex;
+        }
+        .link>ul>li>strong>a
+        {
+            margin: 20px;
+            text-decoration: none;
+            color: lightgray;
+        }
+        .link>ul>li>strong>a:hover
+        {
+            color: white;
+        }
+
+        .sec2
+        {
+            width: 80%;
+            background-color: black;
+            display: block;
+            margin: auto;
+        }
+        #img2
+        {
+            margin-left: 25%;
+            padding: 60px 60px 0px 90px;
+            width: 400px;
+            height: 300px;
+        }
+        .he
+        {
+            text-align: center;
+            margin: auto;
+            color: white;
+            font-size: 60px;
+        }
+        @media screen and (max-width:820px)
+        {
+            .container
+            {
+                width: 100%;
+            }
+            .sec1
+            {
+                display: block;
+            }
+            .tags
+            {
+                display: block;
+            }
+            #img2
+            {
+                margin-left: 0px;
+                width: 200px;
+                height: 150px;
+            }
+        }
+        @media screen and (max-width:1100px) 
+        {
+            .container
+            {
+                width: 100%;
+            }
+            .sec1
+            {
+                display: block;
+            }
+            #img2
+            {
+                align-self: center;
+                width: 300px;
+                height: 200px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="sec1">
+            <div class="sec1part1">
+                <img id="img1" src="./pics/OIP.jpg" alt="">
+            </div>
+            <div class="sec1part2">
+                <div class="link">
+                    <ul class="tags" style="list-style:none;">
+                        <li><strong><a href="index.html">Home</a></strong></li> 
+                        <li><strong><a href="./Html/html.html">HTML</a></strong></li> 
+                        <li><strong><a href="./css/css.html">CSS</a></strong></li> 
+                        <li><strong><a href="">Bootstrap</a></strong></li> 
+                        <li><strong><a href="">JavaScript</a></strong></li> 
+                        <li><strong><a href="">JQuery</a></strong></li> 
+                        <li><strong><a href="">Mini Project</a></strong></li> 
+                        <li><strong><a href="">SQL</a></strong></li> 
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="sec2">
+            <img id="img2" src="./pics/OIP.jpg" alt="RadixWeb Logo">
+            <p class="he">The Training Site</p>
+        </div>
+    </div>
+</body>
+</html>

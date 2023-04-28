@@ -1,0 +1,31 @@
+#line {
+    border-style: solid;
+    border-color: rgb(7, 139, 226);
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  th,td{
+    border: 1px black;
+  }
+  
+  #a {
+    margin-left: 0px;
+  }
+  
+  #b {
+    margin-left: 670px;
+  }
+  
+  #c {
+    margin-left: 610px;
+  }
+  
+  #pdetails {
+    display: inline-flex;
+  }
+  
+  #li {
+    display: inline-flex;
+  }
+  

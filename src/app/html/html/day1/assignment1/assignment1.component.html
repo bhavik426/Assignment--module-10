@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function validation()
+        {
+            var name=document.getElementById("name").value;
+            var age=document.getElementById("age").value;
+            var email=document.getElementById("email").value;
+            var number=document.getElementById("cn").value;
+            var Designation=document.getElementById("designation").value;
+            var date=document.getElementById("doj").value;
+            var Salary=document.getElementById("salary").value;
+            var male=document.getElementById("male").value;
+            var female=document.getElementById("female").value;
+            // var Location=document.getElementById("loc").value;
+            
+            // console.log(name+age+email+number+Designation+date+Salary+male+female);
+
+            
+           
+        }
+    </script>
+</head>
+<body>
+    
+    <form name="employee">
+        <h2 class="text-xl font-bold mb-4">Employee Joining Form</h2>
+        <label>Employee Name:&nbsp;</label>
+        <input class="border border-black rounded-md" placeholder="Your Name Here" required id="name" type ="text"><br><br>
+
+        <label>Age:&nbsp;</label>
+        <input class="border border-black rounded-md" placeholder="Your Age Here" required id="age" type ="number" min="0" max="100"><br><br>
+
+        <label>Gender:&nbsp;</label>
+        <input class="border border-black rounded-md" required id="male" type ="radio" value="Male" name="Gender">
+        <label>Male:&nbsp;</label>
+        <input class="border border-black rounded-md" required id="female" type ="radio" value="Female" name="Gender">
+        <label>Female:&nbsp;</label><br><br>
+
+        <label>Designation:&nbsp;</label>
+        <input class="border border-black rounded-md" placeholder="Your Designation Here" required id="designation" type ="text"><br><br>
+
+        <label>Salary:&nbsp;</label>
+        <input class="border border-black  rounded-md" placeholder="Your Salary Here" required id="salary" type ="number"><br><br>
+
+        <label name="Location">Location:&nbsp;<select class="border border-black rounded-md" required id="Location">
+            <option value="Gandhinagar">Gandhinagar</option>
+            <option value="Ahmedabad">Ahmedabad</option>
+            <option value="kalol">Kalol</option>
+            <option value="Chandkheda">Chandkheda</option>    
+        </select>
+        </label>
+            <br><br>
+
+        <label>Email:&nbsp;</label>
+        <input class="border border-black rounded-md" placeholder="Your Email Here" required id="email" type ="email"><br><br>
+
+        <label>Date of Joining:&nbsp;</label>
+        <input class="border border-black rounded-md" required id="doj" type ="date"><br><br>
+
+        <label>Contact Number:&nbsp;</label>
+        <input class="border border-black rounded-md" placeholder="Your Ph.No Here" required id="cn" type ="number" ><br><br>
+
+        <input class="border border-black cursor-pointer rounded-md p-1 px-4 bg-blue-400" type="submit" value="submit" onclick="validation()">
+    </form>
+
+    
+</body>
+</html>

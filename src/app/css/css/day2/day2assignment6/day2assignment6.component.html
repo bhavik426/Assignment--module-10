@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+.container
+{
+    width: auto;
+    display: block;
+}
+.navbar 
+{
+    background-color: grey;
+    width: 100%;  
+    overflow: auto;
+    /* padding: 9px; */
+    display: block;
+}
+.navbar>div
+{
+    padding: 20px;
+}
+div a
+{
+    text-decoration: none;
+    color: blue;
+}
+img
+{
+    margin: auto;
+}
+.main
+{
+    background-color: lightslategray;
+}
+.main>div
+{
+    display: none;
+}
+.main>div:target
+{
+    display: block;
+}
+h1
+{
+    margin-top: 0px;
+    padding: 20px;
+    background-color: brown;
+    color: aliceblue;
+}
+@media screen and (min-width:1000px)
+{
+    .container
+    {
+        display: flex;
+    }
+    .navbar
+    {
+       width: 15%; 
+    }
+    .navbar>div
+    {
+        padding: 20px;
+    }
+    .main
+    {
+        width: 80%;
+    }
+}
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5GqJhCPYeRpx_456iXN_bHMWVpQbqtcDreQ&usqp=CAU" alt="contact" width="125px" height="125px">
+            </div>
+            <div>
+                <a href="#objective"> 
+                Objective
+                </a>
+            </div>
+            <div>
+                <a href="#contact"> 
+                Contact
+                </a>
+            </div>
+            <div>
+                <a href="#education"> 
+                Education   
+                </a>
+            </div>
+            <div>
+                <a href="#experience">
+                Experience
+                </a>
+            </div>
+            <div>
+                <a href="#project">
+                Project
+                </a>
+            </div>
+            <div>
+                <a href="#skills">
+                Skills
+                </a>
+            </div>
+            <div>
+                <a href="#language">
+                Language
+                </a>
+            </div>
+            <div>
+                <a href="#hobbies">
+                Hobbies
+                </a>
+            </div>
+        </div>   
+
+        <div class="main">
+            <div id="objective">
+                <h1>Objective</h1>
+                <p>To suceed in an environment of growth and excellence and earn a job which provides job satisfaction and self-development and help me achieve personal as well as organisational goals.</p>
+            </div>  
+            <div id="contact">
+                <h1>Contact</h1>
+                <p>Mobile No : 8200828588 <br>
+                    Email : bhavik4063@gmail.com
+                </p>
+            </div>     
+            <div id="education">
+                <h1>Education</h1>
+                <TAble>
+                    <caption> </caption>
+                    <tr style="text-align: center;">
+                        <th>Year</th>
+                        <th>Institute</th>
+                        <th>Percentage</th>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td>2017</td>
+                        <td>ST.Annes</td>
+                        <td>80.83%</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td>2019</td>
+                        <td>Ananya Vidhyalaya</td>
+                        <td>80.90%</td>
+                    </tr>
+                </TAble>
+            </div>
+            <div id="experience">
+                <h1>Experience</h1>
+                <p>Done 15 Days Internship at Tatvasoft and created an online e-commerce website using MongoDB ReactJS.<br><br>
+                    Learned how to use MongoDB and ReactJS Frameworks.</p>
+            </div>
+            <div id="project">
+                <h1>Project</h1>
+                <div id="all">
+                    <div id="cc">
+                        <h4>College Connect</h4>
+                        <ul>
+                            <li>It was a website created using MongoDB NodeJS ReactJS</li>
+                            <ul style="list-style-type: square ;">It had following modules
+                                <li>Chat</li>
+                                <li>Post</li>
+                                <li>Buy/Sell</li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div id="bec">
+                        <h4>Book-E-cell</h4>
+                        <ul>
+                            <li>It was a website created using MongoDB & ReactJS</li>
+                            <ul style="list-style-type: square ;">It had following modules
+                                <li>Add to cart</li>
+                                <li>Add Book</li>
+                                <li>Search Bar</li>
+                                <li>Calculate Price</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="skills">
+                <h1>Skills</h1>
+                <TAble>
+                    <caption> </caption>
+                    <tr style="text-align: center;">
+                        <th>Languages:</th>
+                        <th>Framework:</th>
+                        <th>Frontend:</th>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td>C</td>
+                        <td>Bootstrap</td>
+                        <td>CSS3</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td>Python</td>
+                        <td>AngularJS</td>
+                        <td>HTML5</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td>Java</td>
+                        <td></td>
+                        <td>JAVASCRIPT</td>
+                    </tr>
+                </TAble>
+            </div>
+            <div id="language">
+                <h1>Language</h1>
+                <TAble>
+                    <caption> </caption>
+                    <tr style="text-align: center;">
+                        <th>Languages:</th>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td>C</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td>Python</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td>Java</td>
+                    </tr>
+                </TAble>
+            </div>     
+            <div id="hobbies">
+                <h1>Hobbies</h1>
+                <p>Playing Chess,Volley Ball, Reading Storybooks</p>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    .container
+    {
+        height: auto;
+        width: auto;
+        display: block;
+        padding: 25px;
+    }
+    .sec1
+    {
+        background-color: gray;
+        padding: 10px;
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .sec1part1
+    {
+        margin: auto;
+    }
+    .sec1part2
+    {
+        margin: auto;
+    }
+
+    .sec2
+    {
+        
+        display: block;
+        width: auto;
+        height: auto;
+    }
+    .sec2part1
+    {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        margin: auto;
+    }
+    .img1
+    {
+        margin: auto;       
+    }
+    #text1
+    {
+        font-weight: bolder;
+        margin: auto;
+        font-size: 30px;
+    }
+    .sec2part2
+    {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px;
+    }
+    .sec2part2>div
+    {
+        margin: auto;
+        font-size: 25px;
+        padding: 12px 20px;
+    }
+    #li1
+    {
+        background-color: orange;
+    }
+
+    .sec3
+    {
+        height: auto;
+        width: auto;
+        background-color: lightslategray;
+        display: flex;
+        margin-bottom: 0px
+    }
+    .sec3part1
+    {
+       margin: auto;
+        width: 31%;
+    }
+    #link1
+    {
+        margin-bottom: 15px;
+        text-align: center;
+        width: 50%;
+        border-radius: 12px;
+        margin-left: 0px;
+    }
+    #he1
+    {
+        height: 35px;
+        font-size: 40px;
+        margin-bottom: 0px;
+    }
+    #he2
+    {
+        height: 0px;
+        font-size: 25px;
+        margin-bottom: 0px;
+    }
+    #he3
+    {
+        text-align: justify;
+    }
+
+
+    .sec3part2
+    {
+        
+        display: flex;
+        flex-wrap: wrap;
+        width: 40%;
+        height: auto;
+        margin: auto;
+        padding: 20px;
+        padding-left: 90px;
+    }
+    #name
+    {
+        margin: 7px;
+        border-radius: 7px;
+        margin-right: 30px;
+        padding: 5px;
+        width: 30%;
+    }
+    #name1
+    {
+        margin: 7px;
+        border-radius: 10px;
+        margin-right: 30px;
+        padding: 10px;
+        width: 67%;
+    }
+    .bu1
+    {
+        background-color: orange;
+        height: 35px;
+        border-radius: 7px;
+        margin-left: 7px;
+        width: 70.7%;
+    }
+    .bu
+    {
+        background-color: orange;
+        height: 35px;
+        border-radius: 7px;
+        margin-left: 7px;
+        width: 70.7%;
+    }
+
+
+    .sec4
+    {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        background-color: skyblue;
+    }
+    .sec4part1
+    {
+        width: 53%;
+        margin:auto 0px ;
+        margin-left: 80px;
+    }
+    .sec4part2
+    {
+        width: 20%;
+        margin-left: 0px;
+    }
+    #DIN
+    {
+        margin-top: 50px;
+        height: 30%;
+        width: 70%;
+    }
+
+
+    .sec5
+    { 
+        width: auto;
+        display: flex;
+        margin: auto;
+        padding: 20px;
+    }
+    .sec5part1
+    {
+        width: auto;
+        margin: auto;
+        margin-right: 30px;
+    }
+    
+    .sec5part2
+    {
+        font-size: 15px;
+        margin: auto;
+        margin-left: 0px;
+        width:20%;
+    }
+    #LM
+    {
+        height: 10%;
+        width: 50%;
+        background-color: orange;
+    }
+
+    .sec6
+    {
+        margin-top: 0px;
+        width: auto;
+        height: auto;
+    }
+    .secc6
+    {
+        display: flex;
+        height: 100%;
+    }
+    .sec6part1
+    {
+        margin: auto;
+        width: 22%;
+        text-align: justify;
+    }
+    .sec6part2
+    {
+        margin: auto;
+        width: 22%;
+        text-align: justify;
+    }
+    .sec6part3
+    {
+        margin: auto;
+        width: 22%;
+        text-align: justify;
+    }
+    #B1
+    {
+        background-color: orange;
+        padding: 20px;
+        width: 15%;
+    }
+    .B2
+    {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+
+    .sec7
+    {
+        padding: 20px;
+        background-color: lightslategrey;
+        color: white;
+        width: auto;
+        display: flex;
+    }
+    .sec7part1
+    {
+        margin: auto;
+    }
+    .sec7part2
+    {
+        margin: auto;
+    }
+    .sec7part3
+    {
+        margin: auto;
+    }
+    .sec7part4
+    {
+        margin: auto;
+    }
+    .sec7part5
+    {
+        margin: auto;
+    }
+    .sec7part6
+    {
+        margin: auto;
+    }
+    
+    .sec8
+    {
+        padding: 20px;
+        text-align: center;
+        width: auto;
+        background-color: gray;
+    }
+    @media screen and (max-width: 650px) 
+    {
+        .sec3
+        {
+            display: block;
+        }
+        .sec3part1
+        {
+            margin: auto;
+            width: 100%;
+        }
+        #he1
+        {
+            height: 35px;
+            font-size: 40px;
+            margin-bottom: 0px;
+            text-align: center;
+        }
+        #he2
+        {
+            height: 0px;
+            font-size: 25px;
+            margin-bottom: 0px;
+            text-align: center;
+        }
+        .bu1
+        {
+            background-color: orange;
+            height: 35px;
+            border-radius: 7px;
+            margin-left: 60%;
+            width: 70%;
+        }
+        .sec3part2
+        {
+            display: flex;
+            flex-wrap: wrap;
+            width: 95%;
+            height: auto;
+            margin: auto;
+            padding: 20px;
+            padding-left: 90px;
+        }
+        #name
+        {
+            margin: 7px;
+            border-radius: 7px;
+            margin-right: 30px;
+            padding: 5px;
+            width: 30%;
+        }
+        #name1
+        {
+            margin: 7px;
+            border-radius: 10px;
+            margin-right: 30px;
+            padding: 10px;
+            width: 67%;
+        }
+        .sec4
+        {
+            display: block;
+        }
+        .sec4part1
+        {
+            margin-bottom: 0px;
+        }
+        .sec4part2
+        {
+            width: 100%;
+            margin-left: 30px;
+        }
+        .sec5
+        {
+            display: block;
+        }
+        .sec5part1
+        {
+            width: auto;
+        }
+        .sec5part2
+        {
+            width: auto;
+        }
+        .secc6
+        {
+            display: block;
+        }
+        .sec6part1
+        {
+            margin: auto;
+            width: 100%;
+        }
+        .sec6part3
+        {
+            margin: auto;
+            width: 100%;
+        }
+        .sec6part2
+        {
+            margin: auto;
+            width: 100%;
+        }
+
+    }
+    @media screen and (min-width: 600px)
+    {
+        .sec3part1>#he1
+        {
+            font-size: 30px;
+        }
+        .sec3part1>#he2
+        {
+            font-size: 20px;
+        }
+        #name
+        {
+            margin: 7px;
+            border-radius: 7px;
+            margin-right: 30px;
+            padding: 5px;
+            width: 25%;
+        }
+        #name1
+        {
+            margin: 7px;
+            border-radius: 10px;
+            margin-right: 30px;
+            padding: 10px;
+            width: 63%;
+        }
+    }
+
+    @media screen and (min-width: 1040px)
+    {
+        #name
+        {
+            margin: 7px;
+            border-radius: 7px;
+            margin-right: 30px;
+            padding: 5px;
+            width: 30%;
+        }
+        #name1
+        {
+            margin: 7px;
+            border-radius: 10px;
+            margin-right: 30px;
+            padding: 10px;
+            width: 67%;
+        }
+    }
+
+</style>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="sec1">
+                <div class="sec1part1">
+                    <a href="">Shopping Cart</a>
+                </div>
+                <div class="sec1part2">
+                    <a href="">Sign In/ Register</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="sec2">
+            <div class="sec2part1">
+                <img class="img1" src="./img/logo.png" alt="logo">
+                <p id="text1">512-219-8000</p>
+            </div>
+            <div class="sec2part2">
+                <div><a href="">Yard Signs</a></div>
+                <div><a href="">Banners</a></div>
+                <div><a href="">Accesories</a></div>
+                <div><a href="">Gallery</a></div>
+                <div><a href="">About</a></div>
+                <div><a href="">Price</a></div>
+                <div><a href="">Materials</a></div>
+                <div><a href="">FAQ</a></div>
+                <div id="li1"><a href="">Custom Quote</a></div>
+            </div>
+        </div>
+
+        <div class="sec3">
+            <div class="sec3part1">
+                <h1 id="he1">Big Headline</h1>
+                <h2 id="he2">Smaller subhead Here</h2>
+                <br><br>
+                <p id="he3" >And this is text copied pasted over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and overand over and over and over and over and over and over</p>
+                <div id="link1">
+                    <input class="bu1" type="button" value="Get Started">
+                </div>
+            </div>
+            <div class="sec3part2">
+                    <input id="name" type="text" placeholder="First Name:">
+                    <input id="name" type="text" placeholder="Last Name:">
+                    <input id="name" type="email" placeholder="Email:">
+                    <input id="name" type="number" placeholder="Mobile Number:">
+                    <textarea id="name1" name="message" id="" cols="45" rows="7">Message</textarea>
+                    <input class="bu" type="button" value="SEND">
+
+            </div>
+        </div>
+
+
+        <div class="sec4">
+            <div class="sec4part1">
+                <h2>This is where an Awsome Title Goes</h2>
+                <p>And this is text copied pasted over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and overand over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and overand over and over and over and over and over and over</p>
+            </div>
+
+            <div class="sec4part2">
+                <input id="DIN" type="button" value="Design It Now">
+            </div>
+        </div>
+
+        
+            <div class="sec5">
+                <div class="sec5part1">
+                    <img src="./img/vid.jpg" alt="hi">
+                </div>
+                <div class="sec5part2">
+                    <h1>Watch This</h1>
+                    <h3>It's a video,yo!</h3>
+                    <p>And this is text copied pasted over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and over </p>
+                    <input id="LM" type="button" value="Learn More">
+                </div>
+            </div>
+
+            <div class="sec6">
+                <div class="secc6">
+                    <div class="sec6part1">
+                        <img src="./img/first.png" alt="1">
+                        <h2>Project One</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo minima commodi sequi. At corporis deleniti id provident dolor natus, quis adipisci sit.</p>
+                    </div>
+
+                    <div class="sec6part2">
+                        <img id="first" src="./img/second.png" alt="2">
+                        <h2>Project Two</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo minima commodi sequi. At corporis deleniti id provident dolor natus, quis adipisci sit.</p>
+                    </div>
+
+                    <div class="sec6part3">
+                        <img src="./img/third.png" alt="3">
+                        <h2>Project Three</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo minima commodi sequi. At corporis deleniti id provident dolor natus, quis adipisci sit.</p>
+                    </div>
+                </div>
+                <div class="B2">
+                <input id="B1" type="button" value="Learn More">
+                </div>
+            </div>
+        
+
+        <div class="sec7">
+                <div class="sec7part1">
+                    <p><strong>Help</strong><br>Contact Us<br>F.A.Q. <br>Sitemap <br>Pricing <br>Redeem Promo <br><br>Account <br>My Accountant
+                    </p>
+                </div>
+                <div class="sec7part2">
+                    <p><strong>Products</strong><br>Yard Signs<br>Real Estate Signs<br>Vinyl Banners<br>Car Magnetics<br>Banner Standards<br>Accesories<br>Design Services</p>
+                </div>
+                <div class="sec7part3">
+                    <p><strong>Company</strong><br>Overview<br>Press Room<br>Careers<br>Reviews<br><br><strong>Programs</strong><br>Affiliate</p>
+                </div>
+                <div class="sec7part4">
+                    <p><strong>Help</strong><br>Contact Us<br>F.A.Q. <br>Sitemap <br>Pricing <br>Redeem Promo <br><br>Account <br>My Accountant
+                    </p>
+                </div>
+                <div class="sec7part5">
+                    <p><strong>Products</strong><br>Yard Signs<br>Real Estate Signs<br>Vinyl Banners<br>Car Magnetics<br>Banner Standards<br>Accesories<br>Design Services</p>
+                </div>
+                <div class="sec7part6">
+                    <p><strong>Company</strong><br>Overview<br>Press Room<br>Careers<br>Reviews<br><br><strong>Programs</strong><br>Affiliate</p>
+                </div>
+        </div>
+
+
+        <div class="sec8">
+            <p>Copyright 2016 SignDepotATX.com</p>
+        </div>
+
+</body>
+</html>
